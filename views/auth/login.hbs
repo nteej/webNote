@@ -1,0 +1,28 @@
+<h1>Login to Novia Notes</h1>
+
+{{#if user}}
+
+current user : {{user}}
+
+{{ else }}
+
+current user: unknown
+
+{{/if}}
+
+
+<p></p>
+
+<form method="POST" action="/submit-login-form">
+
+    <label for="username">User name</label>
+
+    <input type="text" id="username" name="username" />
+
+    <label for="password">Password</label>
+
+    <input type="text" id="password" name="password" />
+
+    <input type="submit" />
+
+</form>

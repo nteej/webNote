@@ -1,2 +1,39 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+    <title>{{title}}</title>
+</head>
+
+<body>
+    <h1>{{title}}</h1>
+    
+    <h2>
+        Please check the help page for more info
+    </h2>
+    <p>Welcome to {{title}}</p>
+    {{#if user}}
+
+current user : {{user}}
+
+{{ else }}
+
+current user: unknown
+
+{{/if}}
+    <div id="menu">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/weather">Weather</a></li>
+            <li><a href="/login">Login</a></li>
+            <li><a href="/register">Login</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/help">Help</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>
